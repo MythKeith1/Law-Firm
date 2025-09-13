@@ -1,0 +1,101 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Lex & Partners Law Firm</title>
+  <link rel="stylesheet" href="lawfirm.css" />
+</head>
+<body>
+  <!-- Navbar -->
+  <header class="site-header">
+    <div class="logo">Lex<span>&</span>Partners</div>
+    <nav class="nav" id="navMenu">
+      <a href="#hero">Home</a>
+      <a href="#services">Practice Areas</a>
+      <a href="#about">About</a>
+      <a href="#testimonials">Testimonials</a>
+      <a href="#contact">Contact</a>
+    </nav>
+    <button class="menu-toggle" id="menuToggle">☰</button>
+  </header>
+
+  <!-- Hero -->
+  <section id="hero" class="hero">
+    <div class="hero-content">
+      <h1 class="hero-title">Your Justice, <span>Our Commitment</span></h1>
+      <p class="hero-subtitle">Trusted legal experts with decades of experience</p>
+      <a href="#contact" class="btn cta-glow">Request Consultation</a>
+    </div>
+  </section>
+
+  <!-- Services -->
+  <section id="services" class="services-section">
+    <h2 class="section-title">Practice Areas</h2>
+    <div class="service-grid">
+      <div class="card tilt">
+        <img src="https://source.unsplash.com/400x300/?family,law" alt="Family Law">
+        <h3>Family Law</h3>
+        <p>Compassionate legal support for divorce, custody & adoption cases.</p>
+      </div>
+      <div class="card tilt">
+        <img src="https://source.unsplash.com/400x300/?business,law" alt="Business Law">
+        <h3>Business Law</h3>
+        <p>Comprehensive solutions for corporations, contracts, and compliance.</p>
+      </div>
+      <div class="card tilt">
+        <img src="https://source.unsplash.com/400x300/?courtroom" alt="Criminal Defense">
+        <h3>Criminal Defense</h3>
+        <p>Strong representation to protect your rights and ensure justice.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- About -->
+  <section id="about" class="about-section">
+    <h2 class="section-title">About Our Firm</h2>
+    <div class="about-content">
+      <img src="https://source.unsplash.com/500x400/?lawyer,office" alt="Law Firm Office">
+      <p>At Lex & Partners, we uphold integrity and excellence in every case. With a team of experienced attorneys, we deliver results-driven strategies tailored to your needs. Our mission is to provide trusted legal guidance while protecting your rights and interests.</p>
+    </div>
+  </section>
+
+  <!-- Testimonials -->
+  <section id="testimonials" class="testimonials-section">
+    <h2 class="section-title">What Clients Say</h2>
+    <div class="reviews-carousel" id="reviewsCarousel">
+      <div class="review active">"Professional and reliable. They handled my case flawlessly." – Amanda</div>
+      <div class="review">"Lex & Partners gave me peace of mind during a tough time." – Daniel</div>
+      <div class="review">"Their expertise in business law is unmatched." – Sophia</div>
+    </div>
+    <div class="carousel-controls">
+      <button class="prev">‹</button>
+      <button class="next">›</button>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="contact-section">
+    <h2 class="section-title">Get In Touch</h2>
+    <form id="contactForm" class="contact-form" novalidate>
+      <label>
+        <input type="text" name="name" required placeholder="Your Name" />
+      </label>
+      <label>
+        <input type="email" name="email" required placeholder="Your Email" />
+      </label>
+      <label>
+        <textarea name="message" rows="4" required placeholder="Your Case Details"></textarea>
+      </label>
+      <button type="submit" class="btn cta-glow">Send Inquiry</button>
+      <div id="formMessage" class="form-message"></div>
+    </form>
+  </section>
+
+  <footer class="site-footer">
+    <p>© <span id="year"></span> Lex & Partners Law Firm. All rights reserved.</p>
+  </footer>
+
+  <script src="lawfirm.js"></script>
+</body>
+</html>
